@@ -5,6 +5,9 @@
  */
 package paquete1;
 
+import paquete4.Palabra;
+import paquete3.Valor;
+
 /**
  *
  * @author reroes
@@ -12,6 +15,7 @@ package paquete1;
 public class Mensaje {
 
     public static String obtenerFrase() {
-        return String.format("%s, una ciudad llena de arte y naturaleza", Palabra.obtenerPalabra());
+        return String.format("%s, una ciudad llena de arte y naturaleza con "
+                + "%s\n", Palabra.obtenerPalabra(), Valor.obtenerHabitantes());
     }
 }
